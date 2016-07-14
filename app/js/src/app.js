@@ -5,5 +5,5 @@
 var $ = require('jquery');
 $(document).ready(function() {
     'use strict';
-
+console.log('111');
 });
