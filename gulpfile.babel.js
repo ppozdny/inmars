@@ -37,7 +37,6 @@ const dependencies = [                    //зависимости
     //jquery
     'jquery'
 ];
-
 gulp.task('useref', () =>{
     return gulp.src(globalConfig.baseDir + '/*.html')
         .pipe(plumber({
