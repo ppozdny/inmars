@@ -1,0 +1,32 @@
+{
+    "env": {
+        "browser": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true
+        }
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "global-require": 0,
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-undef": 0,
+        "no-console": 0,
+        "no-unused-vars": 1,
+        "react/jsx-boolean-value": 1,
+        "react/jsx-curly-spacing": 1
+    },
+    "parser": "babel-eslint"
+}

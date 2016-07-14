@@ -1,0 +1,12 @@
+header {
+  .container{
+    background:blue;
+    display:flex;
+    flex-direction: column;
+    .title{
+      text-align: right;
+    }
+    .content{
+    }
+  }
+}
