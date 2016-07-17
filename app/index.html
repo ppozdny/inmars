@@ -5,16 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
     <title>Title</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link type="image/x-icon" href="/favicon.ico" rel="icon">
 </head>
 <body>
 <div id="wrap">
     <header>
         <div class="container">
             <div class="title">Резюме</div>
-            <div class="content">Контент</div>
+            <div class="content">
+                <div class="photo" id="user_img">
+                    <img src="" title="" alt="" >
+                </div>
+                <div class="info">
+                    <div class="name_b">
+                        <div class="name" id="user_name"></div>
+                        <div class="description" id="user_description"></div>
+                    </div>
+                    <div class="contacts_b" id="user_contacts"></div>
+                    <div class="other" id="user_other"></div>
+                </div>
+            </div>
         </div>
     </header>
-    <div class="container">2</div>
+    <section id="main_content">
+        <div class="container">
+            <div class="r-bl" id="wish">
+                <div class="title">Желаемая должность и зарплата</div>
+                <div class="content">
+                    <div class="name"></div>
+                    <div class="description"></div>
+                </div>
+            </div>
+            <div class="r-bl" id="expiriense">
+                <div class="title">Опыт работы — <span id="expirianse_length"></span></div>
+                <div class="content"></div>
+            </div>
+            <div class="r-bl" id="education">
+                <div class="title">Образование</div>
+                <div class="content"></div>
+            </div>
+            <div class="r-bl" id="courses">
+                <div class="title">Повышение квалификации, курсы</div>
+                <div class="content"></div>
+            </div>
+            <div class="r-bl" id="skills">
+                <div class="title">Ключевые навыки</div>
+                <div class="content">
+                    <div id="languages"></div>
+                    <div id="skills_elems"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 <footer>
     <div id="footer-bottom">

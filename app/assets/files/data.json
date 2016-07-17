@@ -1,0 +1,66 @@
+{
+  "user":{
+    "img":{
+      "src":"assets/img/me.jpg"
+    },
+    "name": "Позднякова Валентина Евгеньевна",
+    "expirianse_length": "12 лет 8 месяцев",
+    "description": {
+      "sex": "Женщина",
+      "age": 38,
+      "born": "2 августа 1977"
+    },
+    "contact":{
+      "tel": "+7(913) 949-27-86",
+      "mail": "pozdny@mail.ru",
+      "icq": "94-311-380",
+      "skype": "pozdny987"
+    },
+    "other":{
+      "city": "Новосибирск",
+      "gr": "Россия",
+      "other": "Не готова к переезду, не готова к командировкам"
+    },
+    "wishes":{
+      "post_name": "Web-разработчик",
+      "description":{
+        "category": "Информационные технологии, интернет, телеком",
+        "time": "полная занятость, частичная занятость, проектная работа",
+        "shadule": "полный день, сменный график",
+        "time_to_job": "не имеет значения"
+      }
+    },
+    "skills":{
+      "languages":[
+        {
+          "name": "Русский",
+          "description": "родной"
+        },
+        {
+          "name": "Английский",
+          "description": "читаю профессиональную литературу"
+        }
+      ],
+      "elems":
+      [
+        "HTML5",
+        "CSS3",
+        "Bootstrap",
+        "JQuery",
+        "Angular",
+        "React",
+        "Ajax",
+        "Git",
+        "Gulp",
+        "Grunt",
+        "Webpack",
+        "Less",
+        "Sass",
+        "CMS OpenCart",
+        "CMS Wordpress",
+        "CMS 1C-Битрикс"
+      ]
+    }
+
+  }
+}

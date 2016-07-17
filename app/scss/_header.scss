@@ -1,12 +1,65 @@
 header {
+  display:flex;
+  flex-direction: column;
+  flex:1;
   .container{
-    background:blue;
     display:flex;
     flex-direction: column;
+    flex:1;
     .title{
-      text-align: right;
+      position:relative;
+      display:flex;
+      flex:1;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      font-size:1.5em;
+      &:after{
+        @include after-light();
+      }
+
     }
     .content{
+      padding: 10px 0;
+      background:yellow;
+      display:flex;
+      flex-direction: row;
+      justify-content:start;
+      flex:4;
+      .photo{
+        position: relative;
+        flex:1;
+        text-align: center;
+        img{
+          width:$img-width;
+
+        }
+      }
+      .info{
+        flex:4;
+        .name_b{
+          .name{
+            font-size:3em;
+          }
+        }
+        .contacts_b{
+          ul{
+            padding:0;
+            li{
+              list-style-type: none;
+            }
+          }
+        }
+        .other{
+          ul{
+            padding:0;
+            li{
+              list-style-type: none;
+            }
+          }
+        }
+      }
     }
   }
+
 }

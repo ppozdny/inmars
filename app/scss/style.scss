@@ -1,11 +1,4 @@
-$fon-color: #cacaca;
-$blue-color: #0076FF;
-$grey-color: #929292;
-$nav-color: #FAFAFA;
-$body-color: #F1F1F5;
-$after-color: #c8c7cc;
-$after-color-light: #c8c7cc;
-$font-family: 'Arial';
+@import "variables";
 * {
   box-sizing: border-box;
 }
@@ -103,14 +96,17 @@ body {
 
 #wrap {
   background: #ffffff none repeat scroll 0 0;
-  margin: 0 auto -69px;
+  margin: 0 auto $h-footer-minus;
   min-height: 100%;
-  padding: 0 0 69px;
+  padding: 0 0 $h-footer;
   position: relative;
+  display:flex;
+  flex-direction: column;
 }
 header {
   background: #ffffff none repeat scroll 0 0;
-  height: 330px;
+  height: $h-header;
+  max-height: $h-header;
 
 }
 footer {
@@ -122,11 +118,10 @@ footer {
 .container {
    margin-left: auto;
    margin-right: auto;
-   padding: 0;
+   width: 978px;
    max-width: 978px;
-   min-width: 978px;
    position: relative;
-   background:red;
+   padding:0 9px;
  }
 
 a:focus {
@@ -136,8 +131,12 @@ a:focus {
   outline: medium none;
   outline-offset: -2px;
 }
+.light-grey{
+  color:$light-grey;
+}
 
 @import "header";
+@import "content";
 @import "footer";
 
 
