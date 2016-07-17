@@ -9,8 +9,8 @@
 
 Или
 ----------------------------
-в браузере открыть файл app/index.html (если в браузере chrome,
-то в свойства браузера добавить
+в браузере открыть файл app/index.html.
+если в браузере chrome, то в свойства браузера добавить
 ```bash
---allow-file-access-from-files --disable-web-security)
+--allow-file-access-from-files --disable-web-security
 ```
