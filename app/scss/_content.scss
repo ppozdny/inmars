@@ -5,22 +5,118 @@ section{
   &#main_content{
     .r-bl{
       padding:10px 0;
+      .name-column{
+        max-width:12%;
+      }
+      .content{
+        .row{
+          position:relative;
+          padding-bottom:5px;
+        }
+        .name{
+          font-weight: bold;
+        }
+      }
+      .content-column{
+        ul{
+          padding-left:0px;
+        }
+      }
       &#wish{
         .content{
           .name{
             font-size:1.3em;
+            color:#000;
           }
         }
       }
-      &#skills{
+      &#experience{
         .content{
-          #languages{
+          display:flex;
+          flex-direction:column;
+          margin-bottom:10px;
+          .row{
+            display:flex;
+            flex-direction:row;
+            margin-bottom:10px;
+            line-height:1.8;
+            .name-column{
+              flex:1;
+              padding-top:5px;
+
+            }
+            .content-column{
+              flex:1;
+              .name{
+                font-size:1.2em;
+                color:#000;
+              }
+            }
+          }
+        }
+      }
+      &#courses{
+        .content{
+          display:flex;
+          flex-direction:column;
+          margin-bottom:10px;
+          .row{
             display:flex;
             flex-direction:row;
             margin-bottom:10px;
             .name-column{
               flex:1;
-              max-width:10%;
+              padding-top:5px;
+            }
+            .content-column{
+              flex:1;
+              .name{
+                font-size:1.3em;
+                color:#000;
+              }
+            }
+          }
+        }
+      }
+      &#education{
+        .content{
+          .name{
+            font-size:1.2em;
+            margin-bottom:10px;
+          }
+          .description{
+            display:flex;
+            flex-direction:column;
+            margin-bottom:10px;
+            .row{
+              display:flex;
+              flex-direction:row;
+              margin-bottom:15px;
+              .name-column{
+                flex:1;
+              }
+              .content-column{
+                flex:1;
+                .name{
+                  font-size:1.3em;
+                  color:#000;
+                }
+              }
+            }
+
+          }
+
+        }
+      }
+      &#skills{
+        .content{
+          #languages{
+            position:relative;
+            display:flex;
+            flex-direction:row;
+            margin-bottom:10px;
+            .name-column{
+              flex:1;
             }
             .content-column{
               flex:1;
@@ -31,7 +127,6 @@ section{
             flex-direction:row;
             .name-column{
               flex:1;
-              max-width:10%;
             }
             .content-column{
               display:flex;

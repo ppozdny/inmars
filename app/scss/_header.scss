@@ -21,7 +21,6 @@ header {
     }
     .content{
       padding: 10px 0;
-      background:yellow;
       display:flex;
       flex-direction: row;
       justify-content:start;
@@ -29,7 +28,7 @@ header {
       .photo{
         position: relative;
         flex:1;
-        text-align: center;
+        text-align: left;
         img{
           width:$img-width;
 

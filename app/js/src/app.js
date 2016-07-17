@@ -27,9 +27,12 @@ var Rezume = function(options){
             user_contacts: '#user_contacts',
             user_other: '#user_other',
             user_wish: '#wish',
+            experience: '#experience',
+            education: '#education',
+            courses: '#courses',
             languages: '#languages',
             skills_elems: '#skills_elems',
-            expirianse_lenght: '#expirianse_length'
+            experience_length: '#experience_length'
         }
     };
     //var domen = location.href;
@@ -99,7 +102,7 @@ var Rezume = function(options){
         $(options.RezumeElems.user_contacts).append($('<ul>'));
         $.each(contacts, function(key, val){
             if(key == 'tel'){
-                val += val + ' - <span class="light-grey">предпочитаемый способ связи</span>';
+                val += ' - <span class="light-grey">предпочитаемый способ связи</span>';
             }
             if(key == 'icq'){
                 val = 'ICQ: ' + val;
@@ -123,8 +126,7 @@ var Rezume = function(options){
     };
     this.getContent = function(data){
         $this.getWishes(data);
-        $this.getExpiriense(data);
-        $this.getExpiriense(data);
+        $this.getExperience(data);
         $this.getEducation(data);
         $this.getCourses(data);
         $this.getSkills(data);
@@ -151,15 +153,74 @@ var Rezume = function(options){
 
 
     };
-    this.getExpiriense = function(data){
-        $(options.RezumeElems.expirianse_lenght).html(data.user.expirianse_length);
+    this.getExperience = function(data){
+        $(options.RezumeElems.experience_length).html(data.user.experience_length);
+        var description = data.user.experience.description;
+        $.each(description, function (key, val) {
+            $(options.RezumeElems.experience).find('.content')
+                .append($('<div>').attr({class: 'row'})
+                    .append($('<div>').attr({class: 'name-column'})
+                        .append(val.year))
+                    .append($('<div>').attr({class: 'content-column'})
+                        .append($('<ul>')
+                            .append($('<li>')
+                                .append($('<span>').attr({class:'name'})
+                                    .append(val.name)
+                                )
+                            )
+                            .append($('<li>')
+                                .append(val.city)
+                            )
+                            .append($('<li>')
+                                .append(val.description)
+                            )
+                        )));
 
+        });
     };
-    this.getEducation = function(data){
+    this.getEducation = function(data) {
+        var name = data.user.education.name;
+        var description = data.user.education.description;
+        $(options.RezumeElems.education).find('.content .name').html(name);
+        $.each(description, function (key, val) {
+            $(options.RezumeElems.education).find('.content .description')
+                .append($('<div>').attr({class: 'row'})
+                    .append($('<div>').attr({class: 'name-column'})
+                        .append(val.year))
+                    .append($('<div>').attr({class: 'content-column'})
+                        .append($('<ul>')
+                            .append($('<li>')
+                                .append($('<span>').attr({class:'name'})
+                                    .append(val.name)
+                                )
+                            )
+                            .append($('<li>')
+                                .append(val.description)
+                            )
+                        )));
 
+        });
     };
     this.getCourses = function(data){
+        var description = data.user.courses.description;
+        $.each(description, function (key, val) {
+           $(options.RezumeElems.courses).find('.content')
+                .append($('<div>').attr({class: 'row'})
+                    .append($('<div>').attr({class: 'name-column'})
+                        .append(val.year))
+                    .append($('<div>').attr({class: 'content-column'})
+                        .append($('<ul>')
+                            .append($('<li>')
+                                .append($('<span>').attr({class:'name'})
+                                    .append(val.name)
+                                )
+                            )
+                            .append($('<li>')
+                                .append(val.description)
+                            )
+                        )));
 
+        });
     };
     this.getSkills = function(data){
         var languages = data.user.skills.languages;

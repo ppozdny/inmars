@@ -1,1 +1,60 @@
+@import "variables";
+/*
+   ===================
+   [MINXIN]
+   ===================
+*/
+@mixin after($width) {
+  content: '';
+  position: absolute;
+  left: auto;
+  bottom: 0;
+  right: 0;
+  top: auto;
+  height: 1px;
+  width: $width;
+  background-color: $after-color;
+  display: block;
+  z-index: 15;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  transform: scaleY(.33);
+}
+@mixin after-light() {
+  content: '';
+  position: absolute;
+  left: auto;
+  bottom: 0;
+  right: 0;
+  top: auto;
+  height: 1px;
+  width: 100%;
+  background-color: $after-color-light;
+  display: block;
+  z-index: 15;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  transform: scaleY(.33);
+}
+@mixin before(){
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: auto;
+  right: auto;
+  height: 1px;
+  width: 100%;
+  background-color: $after-color;
+  display: block;
+  z-index: 15;
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  transform: scaleY(.33);
+}
+
+@import "header";
+@import "content";
+@import "footer";
+@import "responsive";
 

@@ -1,0 +1,582 @@
+/*
+   ===================
+   [MINXIN]
+   ===================
+*/
+header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+  header .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+    header .container .title {
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-size: 1.5em; }
+      header .container .title:after {
+        content: '';
+        position: absolute;
+        left: auto;
+        bottom: 0;
+        right: 0;
+        top: auto;
+        height: 1px;
+        width: 100%;
+        background-color: #c8c7cc;
+        display: block;
+        z-index: 15;
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform: scaleY(0.33);
+                transform: scaleY(0.33); }
+    header .container .content {
+      padding: 10px 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+      -webkit-justify-content: start;
+          -ms-flex-pack: start;
+              justify-content: start;
+      -webkit-box-flex: 4;
+      -webkit-flex: 4;
+          -ms-flex: 4;
+              flex: 4; }
+      header .container .content .photo {
+        position: relative;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+        text-align: left; }
+        header .container .content .photo img {
+          width: 150px; }
+      header .container .content .info {
+        -webkit-box-flex: 4;
+        -webkit-flex: 4;
+            -ms-flex: 4;
+                flex: 4; }
+        header .container .content .info .name_b .name {
+          font-size: 3em; }
+        header .container .content .info .contacts_b ul {
+          padding: 0; }
+          header .container .content .info .contacts_b ul li {
+            list-style-type: none; }
+        header .container .content .info .other ul {
+          padding: 0; }
+          header .container .content .info .other ul li {
+            list-style-type: none; }
+
+section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+  section#main_content .r-bl {
+    padding: 10px 0; }
+    section#main_content .r-bl .name-column {
+      max-width: 12%; }
+    section#main_content .r-bl .content .row {
+      position: relative;
+      padding-bottom: 5px; }
+    section#main_content .r-bl .content .name {
+      font-weight: bold; }
+    section#main_content .r-bl .content-column ul {
+      padding-left: 0px; }
+    section#main_content .r-bl#wish .content .name {
+      font-size: 1.3em;
+      color: #000; }
+    section#main_content .r-bl#experience .content {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-bottom: 10px; }
+      section#main_content .r-bl#experience .content .row {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        margin-bottom: 10px;
+        line-height: 1.8; }
+        section#main_content .r-bl#experience .content .row .name-column {
+          -webkit-box-flex: 1;
+          -webkit-flex: 1;
+              -ms-flex: 1;
+                  flex: 1;
+          padding-top: 5px; }
+        section#main_content .r-bl#experience .content .row .content-column {
+          -webkit-box-flex: 1;
+          -webkit-flex: 1;
+              -ms-flex: 1;
+                  flex: 1; }
+          section#main_content .r-bl#experience .content .row .content-column .name {
+            font-size: 1.2em;
+            color: #000; }
+    section#main_content .r-bl#courses .content {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-bottom: 10px; }
+      section#main_content .r-bl#courses .content .row {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        margin-bottom: 10px; }
+        section#main_content .r-bl#courses .content .row .name-column {
+          -webkit-box-flex: 1;
+          -webkit-flex: 1;
+              -ms-flex: 1;
+                  flex: 1;
+          padding-top: 5px; }
+        section#main_content .r-bl#courses .content .row .content-column {
+          -webkit-box-flex: 1;
+          -webkit-flex: 1;
+              -ms-flex: 1;
+                  flex: 1; }
+          section#main_content .r-bl#courses .content .row .content-column .name {
+            font-size: 1.3em;
+            color: #000; }
+    section#main_content .r-bl#education .content .name {
+      font-size: 1.2em;
+      margin-bottom: 10px; }
+    section#main_content .r-bl#education .content .description {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-bottom: 10px; }
+      section#main_content .r-bl#education .content .description .row {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        margin-bottom: 15px; }
+        section#main_content .r-bl#education .content .description .row .name-column {
+          -webkit-box-flex: 1;
+          -webkit-flex: 1;
+              -ms-flex: 1;
+                  flex: 1; }
+        section#main_content .r-bl#education .content .description .row .content-column {
+          -webkit-box-flex: 1;
+          -webkit-flex: 1;
+              -ms-flex: 1;
+                  flex: 1; }
+          section#main_content .r-bl#education .content .description .row .content-column .name {
+            font-size: 1.3em;
+            color: #000; }
+    section#main_content .r-bl#skills .content #languages {
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      margin-bottom: 10px; }
+      section#main_content .r-bl#skills .content #languages .name-column {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+            -ms-flex: 1;
+                flex: 1; }
+      section#main_content .r-bl#skills .content #languages .content-column {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+            -ms-flex: 1;
+                flex: 1; }
+    section#main_content .r-bl#skills .content #skills_elems {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      section#main_content .r-bl#skills .content #skills_elems .name-column {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+            -ms-flex: 1;
+                flex: 1; }
+      section#main_content .r-bl#skills .content #skills_elems .content-column {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+            -ms-flex: 1;
+                flex: 1; }
+        section#main_content .r-bl#skills .content #skills_elems .content-column ul {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-flex-flow: row wrap;
+              -ms-flex-flow: row wrap;
+                  flex-flow: row wrap; }
+          section#main_content .r-bl#skills .content #skills_elems .content-column ul li {
+            width: auto;
+            padding: 5px 5px;
+            margin: 0 5px 5px 0;
+            background: #e9e9e9; }
+    section#main_content .r-bl .content {
+      padding: 5px 0; }
+      section#main_content .r-bl .content ul {
+        margin: 0; }
+        section#main_content .r-bl .content ul li {
+          list-style-type: none; }
+  section#main_content .title {
+    position: relative;
+    color: #afafaf;
+    font-size: 1.2em; }
+    section#main_content .title:after {
+      content: '';
+      position: absolute;
+      left: auto;
+      bottom: 0;
+      right: 0;
+      top: auto;
+      height: 1px;
+      width: 100%;
+      background-color: #c8c7cc;
+      display: block;
+      z-index: 15;
+      -webkit-transform-origin: 50% 100%;
+      transform-origin: 50% 100%;
+      -webkit-transform: scaleY(0.33);
+              transform: scaleY(0.33); }
+  section#main_content .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+
+footer #footer-bottom {
+  background: #ffffff none repeat scroll 0 0;
+  height: 70px;
+  padding: 18px 0; }
+
+@media screen and (min-width: 1300px) {
+  /*body,.container{
+     background: #99e71e;
+   }*/ }
+
+@media screen and (max-width: 1285px) and (min-width: 1020px) {
+  /* body,.container{
+     background:purple;
+   }*/
+  .container {
+    width: 1000px; } }
+
+@media screen and (max-width: 1020px) {
+  /*body,.container{
+    background:orange;
+  }*/
+  .container {
+    width: 800px; }
+  header {
+    height: 300px; }
+    header .container .content .info {
+      -webkit-box-flex: 3;
+      -webkit-flex: 3;
+          -ms-flex: 3;
+              flex: 3; } }
+
+@media screen and (max-width: 830px) {
+  /*body,.container{
+     background:green;
+   }*/
+  .container {
+    width: 600px; }
+  header {
+    height: 380px; }
+    header .container .content .info {
+      -webkit-box-flex: 2;
+      -webkit-flex: 2;
+          -ms-flex: 2;
+              flex: 2; }
+  section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+    section#main_content .r-bl .name-column {
+      max-width: 19%; } }
+
+@media screen and (orientation: landscape) and (max-height: 414px) {
+  /*body,.container{
+    background:grey;
+  }*/ }
+
+@media screen and (max-width: 630px) {
+  /*body,.container{
+    background:blue;
+  }*/
+  .container {
+    width: 100%; }
+  section#main_content .r-bl .name-column {
+    max-width: 20%; } }
+
+@media screen and (max-width: 511px) {
+  /*body,.container{
+    background:yellow;
+  }*/
+  header {
+    height: 500px; }
+    header .container .content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      header .container .content .photo {
+        text-align: center; }
+  section#main_content .r-bl .name-column {
+    max-width: 22%; }
+  section#main_content .r-bl#experience .content .row {
+    line-height: 1.7; }
+    section#main_content .r-bl#experience .content .row .name-column {
+      font-size: 0.9em; } }
+
+@media screen and (max-width: 450px) {
+  /*body,.container{
+    background:red;
+  }*/
+  header {
+    height: 500px; }
+    header .container .content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      header .container .content .info .name_b .name {
+        font-size: 2.5em; }
+  section#main_content .r-bl .name-column {
+    max-width: 30%; } }
+
+@media screen and (max-width: 352px) {
+  /*body,.container{
+     background: #80251f;
+   }*/
+  header {
+    height: 570px; } }
+
+@media screen and (max-width: 330px) {
+  /* body,.container{
+    background: orange;
+  }*/
+  section#main_content .r-bl .name-column {
+    max-width: none; }
+  section#main_content .r-bl#experience .content .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    section#main_content .r-bl#experience .content .row:after {
+      content: '';
+      position: absolute;
+      left: auto;
+      bottom: 0;
+      right: 0;
+      top: auto;
+      height: 1px;
+      width: 100%;
+      background-color: #c8c7cc;
+      display: block;
+      z-index: 15;
+      -webkit-transform-origin: 50% 100%;
+      transform-origin: 50% 100%;
+      -webkit-transform: scaleY(0.33);
+              transform: scaleY(0.33); }
+  section#main_content .r-bl#education .content .description .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    section#main_content .r-bl#education .content .description .row:after {
+      content: '';
+      position: absolute;
+      left: auto;
+      bottom: 0;
+      right: 0;
+      top: auto;
+      height: 1px;
+      width: 100%;
+      background-color: #c8c7cc;
+      display: block;
+      z-index: 15;
+      -webkit-transform-origin: 50% 100%;
+      transform-origin: 50% 100%;
+      -webkit-transform: scaleY(0.33);
+              transform: scaleY(0.33); }
+  section#main_content .r-bl#courses .content .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    section#main_content .r-bl#courses .content .row:after {
+      content: '';
+      position: absolute;
+      left: auto;
+      bottom: 0;
+      right: 0;
+      top: auto;
+      height: 1px;
+      width: 100%;
+      background-color: #c8c7cc;
+      display: block;
+      z-index: 15;
+      -webkit-transform-origin: 50% 100%;
+      transform-origin: 50% 100%;
+      -webkit-transform: scaleY(0.33);
+              transform: scaleY(0.33); }
+  section#main_content .r-bl#skills .content #languages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 5px; }
+    section#main_content .r-bl#skills .content #languages:after {
+      content: '';
+      position: absolute;
+      left: auto;
+      bottom: 0;
+      right: 0;
+      top: auto;
+      height: 1px;
+      width: 100%;
+      background-color: #c8c7cc;
+      display: block;
+      z-index: 15;
+      -webkit-transform-origin: 50% 100%;
+      transform-origin: 50% 100%;
+      -webkit-transform: scaleY(0.33);
+              transform: scaleY(0.33); }
+  section#main_content .r-bl#skills .content #skills_elems {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; } }

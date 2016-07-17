@@ -1,0 +1,247 @@
+@media screen and (min-width: 1300px) {
+   /*body,.container{
+     background: #99e71e;
+   }*/
+}
+
+@media screen and (max-width: 1285px) and (min-width: 1020px) {
+  /* body,.container{
+     background:purple;
+   }*/
+  .container{
+    width:1000px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  /*body,.container{
+    background:orange;
+  }*/
+  .container{
+    width: 800px;
+  }
+  header {
+    height:300px;
+    .container{
+      .content{
+        .info{
+          flex:3;
+        }
+      }
+    }
+
+  }
+
+
+}
+@media screen and (max-width: 830px) {
+   /*body,.container{
+     background:green;
+   }*/
+  .container{
+    width: 600px;
+  }
+  header {
+    height:380px;
+    .container{
+      .content{
+        .info{
+          flex:2;
+        }
+      }
+    }
+
+  }
+  section{
+    display:flex;
+    flex-direction: column;
+    flex:1;
+    &#main_content{
+      .r-bl{
+        .name-column{
+          max-width:19%;
+        }
+      }
+    }
+  }
+}
+@media screen and (orientation:landscape) and (max-height:414px) {
+  /*body,.container{
+    background:grey;
+  }*/
+
+
+}
+@media screen and (max-width: 630px) {
+  /*body,.container{
+    background:blue;
+  }*/
+  .container{
+    width: 100%;
+  }
+  section{
+    &#main_content{
+      .r-bl{
+        .name-column{
+          max-width:20%;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 511px) {
+  /*body,.container{
+    background:yellow;
+  }*/
+  header {
+    height:500px;
+    .container{
+      .content{
+        flex-direction: column;
+        .photo{
+          text-align: center;
+        }
+      }
+
+    }
+  }
+  section{
+    &#main_content{
+      .r-bl{
+        .name-column{
+          max-width:22%;
+        }
+        &#experience{
+          .content{
+            .row{
+              line-height:1.7;
+              .name-column{
+                font-size:0.9em;
+
+              }
+            }
+          }
+        }
+
+      }
+
+
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 450px) {
+  /*body,.container{
+    background:red;
+  }*/
+  header {
+    height:500px;
+    .container{
+      .content{
+        flex-direction: column;
+        .info{
+          .name_b{
+            .name{
+              font-size:2.5em;
+            }
+          }
+
+        }
+      }
+
+    }
+  }
+  section{
+    &#main_content{
+      .r-bl{
+        .name-column{
+          max-width:30%;
+        }
+
+      }
+
+
+    }
+  }
+}
+
+@media screen and (max-width: 352px) {
+   /*body,.container{
+     background: #80251f;
+   }*/
+
+  header {
+    height:570px;
+
+  }
+}
+
+@media screen and (max-width: 330px) {
+ /* body,.container{
+    background: orange;
+  }*/
+  section{
+    &#main_content{
+      .r-bl{
+        .name-column{
+          max-width:none;
+        }
+        &#experience{
+          .content{
+            .row{
+              flex-direction:column;
+              &:after{
+                @include after-light();
+              }
+            }
+          }
+        }
+        &#education{
+          .content{
+            .description{
+              .row{
+                flex-direction:column;
+                &:after{
+                  @include after-light();
+                }
+              }
+            }
+
+          }
+        }
+        &#courses{
+          .content{
+            .row{
+              flex-direction:column;
+              &:after{
+                @include after-light();
+              }
+            }
+          }
+        }
+        &#skills{
+          .content{
+            #languages{
+              flex-direction:column;
+              padding-bottom:5px;
+              &:after{
+                @include after-light();
+              }
+            }
+            #skills_elems{
+              flex-direction:column;
+
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+
+}
