@@ -1,4 +1,4 @@
 .idea
 node_modules
-app/js/bundle.js
-app/js/vendors.js
+#app/js/bundle.js
+#app/js/vendors.js
