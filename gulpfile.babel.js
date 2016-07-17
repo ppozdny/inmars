@@ -93,7 +93,7 @@ gulp.task('css', () => {
 
 gulp.task('sass', () => {
     return gulp.src(config.pathDevSCSS + '/**/*.scss')
-        .pipe(sass('app/scss', {sourcemap: true}))
+        .pipe(sass(globalConfig.baseDir + '/scss', {sourcemap: true}))
         .pipe(gulp.dest(config.pathDevCSS))
         .pipe(browserSync.reload({
             stream: true

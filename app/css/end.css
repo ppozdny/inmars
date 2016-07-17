@@ -67,7 +67,7 @@ header {
         bottom: 0;
         right: 0;
         top: auto;
-        height: 1px;
+        height: 2px;
         width: 100%;
         background-color: #c8c7cc;
         display: block;
@@ -345,7 +345,7 @@ section {
       bottom: 0;
       right: 0;
       top: auto;
-      height: 1px;
+      height: 2px;
       width: 100%;
       background-color: #c8c7cc;
       display: block;
@@ -513,7 +513,7 @@ footer #footer-bottom {
       bottom: 0;
       right: 0;
       top: auto;
-      height: 1px;
+      height: 2px;
       width: 100%;
       background-color: #c8c7cc;
       display: block;
@@ -535,7 +535,7 @@ footer #footer-bottom {
       bottom: 0;
       right: 0;
       top: auto;
-      height: 1px;
+      height: 2px;
       width: 100%;
       background-color: #c8c7cc;
       display: block;
@@ -557,7 +557,7 @@ footer #footer-bottom {
       bottom: 0;
       right: 0;
       top: auto;
-      height: 1px;
+      height: 2px;
       width: 100%;
       background-color: #c8c7cc;
       display: block;
@@ -580,7 +580,7 @@ footer #footer-bottom {
       bottom: 0;
       right: 0;
       top: auto;
-      height: 1px;
+      height: 2px;
       width: 100%;
       background-color: #c8c7cc;
       display: block;
