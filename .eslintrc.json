@@ -23,7 +23,7 @@
             "always"
         ],
         "no-undef": 0,
-        "no-console": 0,
+        "no-console": 1,
         "no-unused-vars": 1,
         "react/jsx-boolean-value": 1,
         "react/jsx-curly-spacing": 1

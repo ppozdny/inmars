@@ -3,6 +3,11 @@
    [MINXIN]
    ===================
 */
+/*
+	==================
+	[HEADER]
+	==================
+*/
 header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -115,6 +120,11 @@ header {
           header .container .content .info .other ul li {
             list-style-type: none; }
 
+/*
+	==================
+	[CONTENT]
+	==================
+*/
 section {
   display: -webkit-box;
   display: -webkit-flex;
@@ -359,6 +369,11 @@ section {
         -ms-flex: 1;
             flex: 1; }
 
+/*
+	==================
+	[FOOTER]
+	==================
+*/
 footer #footer-bottom {
   background: #ffffff none repeat scroll 0 0;
   height: 70px;

@@ -7,11 +7,8 @@ $(function () {
     window.Rezume = new Rezume({
         id:1
     });
-    console.log(window.Rezume);
 });
-var Settings = {
 
-};
 
 /**
  * Rezume object
@@ -53,21 +50,19 @@ var Rezume = function(options){
             cache: false,
             data:  params,
             success: function(data) {
-                console.log(data);
-                console.log(isError(data));
                 if(!isError(data)){
                     $this.getHeader(data);
                     $this.getContent(data);
                 }
             },
             complete: function (XMLHttpRequest, textStatus) {
-                console.log('complete');
+
             },
             error: function(xhr, status, err) {
-                console.log(err);
+
             }
         }).always(function () {
-            console.log('always');
+
         });
 
     };
@@ -253,14 +248,12 @@ var Rezume = function(options){
     };
     this.applyOptions = function() {
         var def;
-        console.log(defaults);
         options = options || {};
         for (def in defaults) {
             if (typeof options[def] === 'undefined') {
                 options[def] = defaults[def];
             }
         }
-        console.log(options);
     };
     $this.applyOptions();
     $this.getData(this.id);
